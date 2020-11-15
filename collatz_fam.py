@@ -10,6 +10,5 @@ def verify_collatz(n):
                 n = int(n/2)
             else:
                 n = n*3 - 1
-        
 
 n = int(input())

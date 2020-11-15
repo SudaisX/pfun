@@ -1,5 +1,3 @@
-from random import randint
-
 def guessing_game(secret_num, num_tries):
     win = False
     while num_tries < 6:
@@ -28,3 +26,6 @@ def guessing_game(secret_num, num_tries):
 
 secret_number = int(input())
 guessing_game(secret_number, 1)
+
+
+

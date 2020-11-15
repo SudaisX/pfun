@@ -22,3 +22,4 @@ def slash_space(height, width, slash):
     print((p1 + '\n') * height, end='')
     
 general_grid(plus, minus, slash, height, width)
+
