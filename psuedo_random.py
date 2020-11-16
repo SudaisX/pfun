@@ -1,11 +1,8 @@
-def random(seed):
-    M = 577
-    a = 13
-    b = 89
+def random(seed, M, a, b):
     X = [seed]
     for i in range(19):
         Xn = (a*X[-1] + b) % M
         X.append(Xn)
-    return X
+    print(X)
 
-print(random(420))
+random(420, 577, 13, 89)
