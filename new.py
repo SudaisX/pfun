@@ -1,3 +1,4 @@
-c = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+from pprint import pprint
 
-print(c)
+new = [['431', '413'], ['431', '413'], ['431', '413']]
+pprint(new)
