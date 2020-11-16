@@ -1,5 +1,6 @@
 select = int(input())
 lst = [int(x) for x in input().strip().split()]
+
 def mean(lst):
     total = 0
     for n in lst:
