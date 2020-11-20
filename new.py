@@ -1,4 +1,4 @@
-from pprint import pprint
+n = [1, 2, 3,542, 4, 65,431, 431, 43,542, 542, 134, 524]
 
-new = [['431', '413'], ['431', '413'], ['431', '413']]
-pprint(new)
+print(max(n))
+print(n.index(max(n)))
