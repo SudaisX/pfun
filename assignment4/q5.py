@@ -16,3 +16,4 @@ n = int(input().strip())
 t = [int(i) for i in input().strip().split()]
 pprint(partition_modulo_n(n, t))
 pprint(t)
+
