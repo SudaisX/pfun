@@ -6,16 +6,14 @@ import sys
 
 def minDiff(arr):
     arr.sort()
-    diff, diff_sum = [], 0
+    diff = []
     for i in range(len(arr)):
         if i == len(arr) or i == len(arr)-1:
             pass
         else:
             diff.append(abs(arr[i]-arr[i+1]))
-            
-    for n in diff:
-        diff_sum += n   
-    return diff_sum
+    return sum(diff)
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

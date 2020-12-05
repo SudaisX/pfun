@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-def priceCheck(products, productPrices, productSold, soldPrice):
+def priceCheck1(products, productPrices, productSold, soldPrice):
     error = 0
     products = {products[i]:productPrices[i] for i in range(len(products))}
     sold = {productSold[i]:soldPrice[i] for i in range(len(productSold))}
@@ -13,6 +13,14 @@ def priceCheck(products, productPrices, productSold, soldPrice):
         if products[prod] != cost:
             error += 1
     return error
+
+def priceCheck(products, productPrices, productSold, soldPrice):
+    products = {products[i]:productPrices[i] for i in range(len(products))}
+    sold = {productSold[i]:soldPrice[i] for i in range(len(productSold))}
+
+    error = []
+    [error.append(1) for prod, cost in sold.items() if products[prod] != cost]
+    return sum(error)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

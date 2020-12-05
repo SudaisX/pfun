@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-def groupTransactions(transactions):
+def groupTransactions1(transactions):
     items_list = []
     items = {transactions[i]:0 for i in range(len(transactions))}
 
@@ -16,6 +16,13 @@ def groupTransactions(transactions):
         items_list.append(f'{key} {val}')
         
     return(sorted(items_list))
+
+def groupTransactions(transactions):  
+    items = {transactions[i]:0 for i in range(len(transactions))}
+    for each in transactions:
+        if each in items:
+            items[each] += 1 
+    return(sorted([f'{key} {val}' for key, val in items.items()]))
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
