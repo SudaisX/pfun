@@ -1,3 +1,2 @@
-# pfun
-
-all the pfun lab, assignment etc questons
+# CS101 Programming Fundamentals - Fall '20  
+-  All the saved codes for labs, assignments, quizes and exams
